@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+    --light__pink: hsl(304, 100%, 97%);
+    --gray__purple: hsl(292, 16%, 49%);
+    --dark__purple: hsl(292, 42%, 14%);
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: url("assets/images/background-pattern-mobile.svg") no-repeat;
+    background-size: 100%;
+    background-color: var(--light__pink);
+    position: relative;
+    left: 50%;
+    top: 50%;
+}
+
+main {
+    position: absolute;
+    transform: translate(-50%, 25%);
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+main .faqs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+main .faqs img {
+    width: 20px;
+    margin-right: 25px;
+}
+
+main .faqs .faqs__title {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+main .accordion__group {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main .accordion__group:last-child {
+    margin-bottom: 0;
+    border: none;
+}
+
+main .accordion__group .accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: var(--dark__purple);
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+main .accordion__group .accordion__header .accordion__title {
+    font-size: .9rem;
+}
+
+main .accordion__group .accordion__content {
+    margin: 20px 0;
+}
+
+main .accordion__group .accordion__content p {
+    color: var(--gray__purple);
+    width: 90%;
+    font-size: .8rem;
+    line-height: 18px;
+}
+
+
