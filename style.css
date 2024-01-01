@@ -86,6 +86,6 @@ main .accordion__group .accordion__content p {
     body {
         background: url("assets/images/background-pattern-desktop.svg") no-repeat;
         background-color: var(--light__pink);
+        background-size: 100%;
     }
 }
-
