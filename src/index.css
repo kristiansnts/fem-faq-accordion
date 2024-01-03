@@ -18,7 +18,7 @@
 body {
   display: flex;
   place-items: center;
-  width: min(90%, 500px);
+  min-width: 320px;
   margin: 0 auto;
   min-height: 100vh;
   background: url("assets/images/background-pattern-mobile.svg") no-repeat;
@@ -32,7 +32,7 @@ body {
 }
 
 main {
-  width: min(80%, 500px);
+  width: 320px;
   margin: 0 auto;
   padding: 20px;
   background-color: white;
@@ -90,4 +90,16 @@ main .accordion__group .accordion__content p {
   width: 90%;
   font-size: .8rem;
   line-height: 18px;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background: url("assets/images/background-pattern-desktop.svg") no-repeat;
+        background-color: var(--light__pink);
+        background-size: 100%;
+    }
+
+    main {
+      width: 600px;
+    }
 }

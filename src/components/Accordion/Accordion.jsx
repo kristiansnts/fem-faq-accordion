@@ -1,8 +1,6 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import MinusImg from "assets/images/icon-minus.svg"
 import PlusImg from "assets/images/icon-plus.svg"
-import { useState } from "react"
 
 const Accordion = (props) => {
     const {title, handleClick, children, isOpen} = props
@@ -18,7 +16,6 @@ const Accordion = (props) => {
                     <p>{children}</p>
                 </div>
             }
-            
         </div>
      );
 }
